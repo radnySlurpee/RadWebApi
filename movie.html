@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Rad WEB API MOVIES</title>
+    <title>Rad WEB API MOVIE</title>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -26,21 +26,9 @@
         </section>
     </center>  
 
-    <div id="load"></div>
-    <script src="js/animateSAVE.js"></script>
-
-    <div class="container">
-        <div class="jumbotron">
-            <h3 class="text-center">Find a movie here</h3>
-            <form id="searchForm">
-                <input type="text" class="form-control" id="searchText" placeholder="Search Movies...">
-            </form>
-        </div>
-    </div>
-
     <div class="container">
         <div class="">
-            <div id="movies" class="row"></div>
+            <div id="movie" class="row"></div>
         </div>
     </div>
       
@@ -52,5 +40,6 @@ crossorigin="anonymous">
 </script>
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <script src="js/main.js"></script>
+<script> getMovie();</script>
 </body>
 </html>

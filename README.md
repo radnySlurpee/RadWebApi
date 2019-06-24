@@ -1,3 +1,3 @@
 # RadWebApi
 api handling
-new read me from RAD
+new read me from RADgi

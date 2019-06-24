@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css?family=Share+Tech&display=swap");
+body, html {
+  height: 100%;
+}
+
+body {
+  background-color: #1f192d;
+  padding: 15px 10px 15px 10px;
+}
+
+body h3, body h4, body h5, body h6, body label {
+  text-align: center;
+  width: 100%;
+  letter-spacing: 2px;
+  font-family: 'Share Tech', sans-serif;
+  color: #FFC300;
+  text-decoration: none;
+  text-shadow: 0 2px 4px #FF476F;
+  -webkit-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+  position: relative;
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+
+body label {
+  font-size: 1.2em;
+}
+
+body img {
+  width: 100%;
+  min-width: 100%;
+  min-height: 80%;
+  background-color: #FF476F;
+}
+
+body section.neonbuttons {
+  padding: 15px 10px 15px 10px;
+  display: inline-block;
+}
+
+body section.neonbuttons a, body section.neonbuttons a:active, body section.neonbuttons a:focus, body section.neonbuttons a:link, body section.neonbuttons a:visited {
+  font-size: 1.5em;
+  letter-spacing: 2px;
+  font-family: 'Share Tech', sans-serif;
+  color: #00FFC3;
+  text-decoration: none;
+  text-shadow: 0 2px 4px #00FFC3;
+  -webkit-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+  position: relative;
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+
+body section.neonbuttons a:hover:before {
+  -webkit-transform-origin: bottom left;
+  transform-origin: bottom left;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+body section.neonbuttons a:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #FFC300;
+  -webkit-box-shadow: 0 4px 8px #FF476F;
+          box-shadow: 0 4px 8px #FF476F;
+  -webkit-transform-origin: bottom right;
+  transform-origin: bottom right;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  transition: -webkit-transform .5s ease;
+  -webkit-transition: -webkit-transform .5s ease;
+  transition: transform .5s ease;
+  transition: transform .5s ease, -webkit-transform .5s ease;
+  transition: transform .5s ease,-webkit-transform .5s ease;
+}
+
+body section.neonbuttons *, body section.neonbuttons :after, body section.neonbuttons :before {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+/*# sourceMappingURL=main.css.map */

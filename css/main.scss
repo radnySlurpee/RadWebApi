@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css?family=Share+Tech&display=swap');
+$colors:(
+    indigo: #66008C,
+    infrared: #FF476F,
+    flourange: #FFC300,
+    turqblue:  #00FFC3,
+    accent:  #1f192d,
+    colorwhite: #fff
+);
+$padding10All: 15px 10px 15px 10px;
+
+@function color($color-name) {
+    @return map-get($colors, $color-name)
+}
+
+body, html{
+    height: 100%;
+}
+
+
+body{
+    background-color: map-get($colors, accent);
+    padding: $padding10All;
+
+    h3,h4,h5,h6,label{
+        
+        text-align: center;
+        width: 100%;
+        letter-spacing: 2px;
+        font-family: 'Share Tech', sans-serif;
+        color: color(flourange);
+        text-decoration: none;
+        text-shadow: 0 2px 4px color(infrared);
+        transition: all .3s ease-in;
+        position: relative;
+        background-color: transparent;
+        -webkit-text-decoration-skip: objects;
+
+    }
+    label{
+        font-size: 1.2em;
+    }
+    
+    img{
+        width: 100%;
+        min-width: 100%;
+        min-height: 80%;
+        background-color: #FF476F;
+    }
+
+    section.neonbuttons{ 
+        padding: $padding10All;
+        display: inline-block;
+        a, a:active, a:focus, a:link, a:visited {
+            font-size: 1.5em;
+            letter-spacing: 2px;
+            font-family: 'Share Tech', sans-serif;
+            color: color(turqblue);
+            text-decoration: none;
+            text-shadow: 0 2px 4px color(turqblue);
+            transition: all .3s ease-in;
+            position: relative;
+            background-color: transparent;
+            -webkit-text-decoration-skip: objects;
+        }
+        a:hover:before {
+            -webkit-transform-origin: bottom left;
+            transform-origin: bottom left;
+            -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+        }
+        a:before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background-color: color(flourange);
+            box-shadow: 0 4px 8px color(infrared);
+            -webkit-transform-origin: bottom right;
+            transform-origin: bottom right;
+            -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+            transition: -webkit-transform .5s ease;
+            transition: transform .5s ease;
+            transition: transform .5s ease,-webkit-transform .5s ease;
+        }
+        *, :after, :before {
+            box-sizing: inherit;
+            
+        }
+
+    }
+
+
+}
+
